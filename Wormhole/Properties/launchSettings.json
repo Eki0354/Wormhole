@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Wormhole": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Code\\Projects\\Moonveil\\moonveil-site-2\\public\\img\\profile\\badges"
+    }
+  }
+}

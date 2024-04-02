@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>YuI.ico</ApplicationIcon>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <PackageIcon>YuI.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.manifest" />
+    <None Remove="Properties\app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="app.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="YuI.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TinyPNG" Version="3.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="YuI.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
